@@ -104,25 +104,48 @@ generate_unique_images(11, {
   "layers": [
     {
       "name": "Background",
-      "values": ["Blue", "Orange", "Purple", "Red", "Yellow"],
-      "trait_path": "./trait-layers/backgrounds",
-      "filename": ["blue", "orange", "purple", "red", "yellow"],
-      "weights": [20,20,20,20,20]
+      "values": ["geode pattern", "light blue", "peach", "sepia tone", "space", "tie dye", "warm bokeh"],
+      "trait_path": "../Ansel NFT/Background",
+      "filename": ["Bg_geodePattern", "Bg_lightBlue", "Bg_peach", "Bg_sepiaTone", "Bg_space", "Bg_tieDye",
+                   "Bg_warmBokeh"],
+      "weights": [14.2, 21.3, 14.2, 14.2, 7.1, 14.2, 14.2]
     },
     {
-      "name": "Foreground",
-      "values": ["Python Logo", "Python Logo 32"],
-      "trait_path": "./trait-layers/foreground",
-      "filename": ["logo", "logo"],
-      "weights": [50, 50]
+      "name": "Fur",
+      "values": ["beige solid", "dusty rose"],
+      "trait_path": "../Ansel NFT/Fur",
+      "filename": ["Fur_beigeSolid", "Fur_dustyRose"],
+      "weights": [75, 25]
     },
     {
-      "name": "Branding",
-      "values": ["A Name", "Another Name"],
-      "trait_path": "./trait-layers/text",
-      "filename": ["text", "text"],
-      "weights": [50, 50]
+      "name": "Eyes",
+      "values": ["anime eyes blue", "laser eyes"],
+      "trait_path": "../Ansel NFT/Eyes",
+      "filename": ["Eyes_animeEyesBlue", "Eyes_laserEyes"],
+      "weights": [75, 25]
+    },
+    {
+      "name": "Clothes",
+      "values": ["bee costume", "blue suit"],
+      "trait_path": "../Ansel NFT/Clothes",
+      "filename": ["Clothes_beeCostume", "Clothes_blueSuit"],
+      "weights": [75, 25]
+    },
+    {
+      "name": "Snout",
+      "values": ["big smile", "cookie"],
+      "trait_path": "../Ansel NFT/Snout",
+      "filename": ["Snout_bigSmile", "Snout_cookie"],
+      "weights": [75, 25]
+    },
+    {
+      "name": "Hats",
+      "values": ["banana peel", "brown side hat"],
+      "trait_path": "../Ansel NFT/Hats",
+      "filename": ["Hats_bananaPeel", "Hats_brownSideHat"],
+      "weights": [75, 25]
     }
+
   ],
   "incompatibilities": [
     {
@@ -132,8 +155,8 @@ generate_unique_images(11, {
     },  #  @dev : Blue backgrounds will never have the attribute "Python Logo 2".
   ],
   "baseURI": ".",
-  "name": "NFT #",
-  "description": "This is a description for this NFT series."
+  "name": "Poodle Pal #",
+  "description": "Poodle pals stick together."
 })
 
 #Additional layer objects can be added following the above formats. They will automatically be composed along with the rest of the layers as long as they are the same size as eachother.
